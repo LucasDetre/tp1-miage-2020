@@ -49,6 +49,8 @@ _Temps estimé : 1 h_
 
 IMPORTANT: [Question]  Le code est-il structuré en couches ? Imaginez un projet d'entreprise constitué de centaines de classes ainsi structuré : que risque-t-il d'arriver ?
 
+Le code n'est pas structuré en couche car toutes les classes sont situées dans le même package. Dans un projet d'entreprise aux dimensions bien plus importantes, la maintenance sera bien plus compliquée sans aucun découpage en couche.
+
 IMPORTANT: [Question]  Que se passe-t-il si l'on renomme une colonne de la base de donnée ?
 
 IMPORTANT: [Question]  Où se trouve le code métier (voir la règle de gestion RG1) ? cette règle est-elle facilement testable par un test unitaire ? 
