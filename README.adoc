@@ -121,6 +121,8 @@ Source : http://leanpub.com/get-your-hands-dirty-on-clean-architecture[Tom Hombe
 
 IMPORTANT: [Question] Rappeler en quelques lignes les grands principes de cette architecture.
 
+``L'architecture hexagonale décompose un système en plusieurs composants interchangeables et faiblement couplés, tels le noyau de l'application, la base de données, l'interface utilisateur, les scripts de test ou encore les interfaces avec d'autres systèmes.``
+
 Complétez ce code avec une fonctionnalité de création de `TodoItem`  persisté en base et appelé depuis un endpoint REST `POST /todos` qui renvoi un code `201` en cas de succès. La fonctionnalité à implémenter est contractualisée par le port d'entrée `AddTodoItem`.
 
 # Exercice 3 - Ecriture de tests
