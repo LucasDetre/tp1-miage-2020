@@ -59,13 +59,15 @@ spring.jpa.hibernate.ddl-auto = update
 ```
 `` Cette ligne du fichier application.properties garantit qu'en cas de modification ou de renomage on gardera l'ancienne colonne et on en créera une nouvelle ``
 
-IMPORTANT: [Question]  Où se trouve le code métier (voir la règle de gestion RG1) ? cette règle est-elle facilement testable par un test unitaire ? 
+IMPORTANT: [Question]  Où se trouve le code métier (voir la règle de gestion RG1) ? cette règle est-elle facilement testable par un test unitaire ?
+
+`` Le code métier se trouve dans la class _todoListController_, cette règle est facilement testable via un test unitaire si on a garanti au préalable la persistance des données ``
 
 * Lancer une base PostgreSQL en Docker :
 ```bash
 docker run --rm -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
-IMPORTANT: [Question]  Expliquer cette ligne de commande (y compris les options utilisées)
+IMPORTANT: [Question]  Expliquer cette ligne de commande (y compris les options utilisées) 
 
 IMPORTANT: [Question]  Lancer les commandes `docker ps` et `ps -eaf | grep postgres`, à quoi correspondent les lignes affichées ? Que remarquez vous ?
 
