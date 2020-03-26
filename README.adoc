@@ -115,12 +115,13 @@ _Temps estimé : 20 mins_
 
 *Quels types de tests devra-t-on écrire pour les adapteurs ?* 
 
+```
+Pour tester l'intégrité des adapteurs il faudrait écrire des test d'intégration
+```
+
 *Que teste-on dans ce cas ?*
 
-*S'il vous reste du temps, écrivez quelques uns de ces types de test.*
+```
+Dans ce cas on testerait les interactions de l'application avec l'extérieur (API par exemple)
+```
 
-[TIP]
-=====
-- pour tester l'adapter REST, utilisez l'annotation `@WebMvcTest(controllers = TodoListController.class)`
-- Voir cette https://spring.io/guides/gs/testing-web/[documentation]
-=====
