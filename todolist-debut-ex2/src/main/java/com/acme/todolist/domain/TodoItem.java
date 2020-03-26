@@ -90,4 +90,18 @@ public class TodoItem {
 		return true;
 	}
 	
+	
+	public void setTime(Instant time) {
+		this.time = time;
+	}
+
+	public TodoItem minusSeconds(int seconds) {
+		this.setTime(this.getTime().minusSeconds(seconds));
+		return this;
+	}
+	public TodoItem plusSeconds(int seconds) {
+		this.setTime(this.getTime().plusSeconds(seconds));
+		return this;
+	}
+	
 }
