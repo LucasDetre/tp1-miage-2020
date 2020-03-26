@@ -79,6 +79,13 @@ _ -p 5432:5432 _ : associe le port du host au port du contener
 
 IMPORTANT: [Question]  Lancer les commandes `docker ps` et `ps -eaf | grep postgres`, à quoi correspondent les lignes affichées ? Que remarquez vous ?
 
+```
+--La commande `docker ps` liste les conteneurs avec
+ID DU CONTENEUR: l’image utilisée: la commande docker utilisée: temps depuis la création: l’uptime: le port de connexion
+
+--ps -eaf | grep postgres⇒ Liste tous les processus de tous les utilisateurs (root / User /999= docker) utilisant postgres
+```
+
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
 * IMPORTANT: [Question] Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ? 
