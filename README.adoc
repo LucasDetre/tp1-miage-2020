@@ -88,7 +88,11 @@ ID DU CONTENEUR: l’image utilisée: la commande docker utilisée: temps depuis
 
 * Compléter le code manquant dans la méthode `TodoListController.createTodoItem()`
 
-* IMPORTANT: [Question] Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ? 
+* IMPORTANT: [Question] Pourquoi `todoItemRepository` est-il `null` ? Quelle est la meilleure façon de l'injecter ?
+
+```
+todoItemRepository est null car nous n'avons pas injecter les dépendances, pour le faire il suffit d'ajout l'anotation @Inject tout en important javax.inject.Inject;
+```
 
 * Modifier le code en conséquence.
 
